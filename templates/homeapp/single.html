@@ -62,7 +62,7 @@
                   <div class="clearfix">
                     <ul class="slides">
                       {% for image in single_product.product_images.all %}
-                      <li data-thumb="/media/{{ image.pr_images }}">
+                      <li data-thumb="{{ image.pr_images.url }}">
                         <div class="thumb-image">
                           <img
                             src="{{ image.pr_images.url }}"
